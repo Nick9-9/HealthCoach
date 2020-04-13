@@ -1,6 +1,8 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace HealthCoach.Server.Data
+namespace HealthCoach.Shared.Models
 {
     public class WeatherForecast
     {
@@ -8,8 +10,8 @@ namespace HealthCoach.Server.Data
 
         public int TemperatureC { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
         public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
